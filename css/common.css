@@ -1,0 +1,284 @@
+/* 版心w */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* 快捷导航模块 */
+.shortcut {
+  height: 31px;
+  /* 左右都要垂直居中，即给父盒子行高，子盒子都继承 */
+  line-height: 31px;
+  background-color: #f1f1f1;
+}
+
+.shortcut ul li {
+  float: left;
+}
+
+.style_red {
+  color: red;
+}
+
+/* 选择所有偶数的小li */
+.shortcut .fr ul li:nth-child(even) {
+  width: 1px;
+  height: 12px;
+  background-color: #666;
+  margin: 9px 15px 0;
+}
+
+.rotate span {
+  width: 5px;
+  height: 6px;
+  border: 1px solid #666;
+  border-top: none;
+  border-left: none;
+  display: block;
+  float: right;
+  margin: 11px;
+  transform: rotate(45deg);
+}
+
+.header {
+  position: relative;
+  height: 105px;
+}
+
+.logo {
+  /* 图片定位紧挨着父盒子header，子绝父相 */
+  position: absolute;
+  top: 25px;
+  width: 175px;
+  height: 61px;
+}
+
+.logo a {
+  /* 把链接a转换，修饰得跟logo图片一样大 */
+  display: block;
+  width: 175px;
+  height: 61px;
+  background: url(../images/logo.png) no-repeat;
+  /* 把文字隐藏 */
+  text-indent: -199px;
+  overflow: hidden;
+}
+
+.search {
+  position: absolute;
+  /* 用的css5模式，padding和border不会撑大盒子 */
+  left: 346px;
+  top: 25px;
+  width: 538px;
+  height: 36px;
+  border: 2px solid #b1191a;
+}
+
+.search input {
+  width: 455px;
+  height: 32px;
+  padding-left: 10px;
+}
+
+.search button {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 82px;
+  height: 34px;
+  background-color: red;
+}
+
+.hotwords {
+  position: absolute;
+  top: 66px;
+  left: 346px;
+}
+
+.hotwords a {
+  /* 行内元素可以有左右margin值 */
+  margin: 0 10px;
+}
+
+/* 购物车模块开始*/
+.shopcar {
+  position: relative;
+  float: right;
+  clear: both;
+  width: 140px;
+  height: 35px;
+  margin: 30px 50px 0 0;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.shopcar:hover {
+  background: #eee;
+  transition: all 0.3s;
+}
+
+.iconfont.icon-gouwuchexuanzhong {
+  color: #b1191a;
+}
+
+.count {
+  position: absolute;
+  top: -6px;
+  right: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background: red;
+  color: #fff;
+  border-radius: 8px 8px 8px 0;
+  line-height: 16px;
+}
+
+.iconfont.icon-right {
+  font-size: 12px;
+}
+
+/* 购物车模块end */
+.nav {
+  height: 47px;
+  border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+  float: left;
+  width: 210px;
+  height: 45px;
+  background-color: #b1191a;
+}
+
+.nav.navitems {
+  float: left;
+}
+
+.dropdown .dt {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+}
+
+.dropdown .dd {
+
+  width: 100%;
+  /* height: 468px; */
+  font-size: 14px;
+  color: #fff;
+  background-color: #b1191a;
+}
+
+.dropdown .dd ul li {
+  height: 31px;
+  line-height: 31px;
+  margin-left: 2px;
+  padding-left: 10px;
+}
+
+.dropdown .dd ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.dropdown .dd ul li:hover {
+  background-color: #fff;
+}
+
+.dropdown .dd ul li:hover a {
+  background-color: #fff;
+  color: #b1191a;
+}
+
+.dd span {
+  float: right;
+  padding-right: 11px;
+}
+
+.nav .navitems ul li {
+  float: left;
+}
+
+/* 给a加宽高，增大点击区域，增强用户体验 */
+.nav .navitems ul li a {
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 21px;
+  font-size: 16px;
+}
+
+/* 导航栏结束end */
+.footer {
+  height: 415px;
+  background: #f5f5f5;
+  padding-top: 30px;
+}
+
+.mod_services {
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* 盒子被挤下来了就在*里加box-sizing */
+.mod_services ul li {
+  float: left;
+  width: 300px;
+  height: 50px;
+  padding-left: 35px;
+}
+.mod_services ul li h5{
+  float: left;
+  margin-right:5px;
+  background: url(../images/icons.png) no-repeat -252px -5px;
+  width: 50px;height: 50px;
+}
+.service_text h4{
+  font-size: 14px;
+}
+.service_text p{
+  font-size: 12px;
+}
+.mod_help{
+height: 185px;
+border-bottom: 1px solid #ccc;
+}
+.mod_help{
+  padding: 21px 0 0 0px;
+
+}
+.mod_help dl{
+  float: left;
+  padding:0 50px 0 70px;
+}
+.mod_help dt{
+  font-size: 16px;
+  padding: 2px 0;
+}
+.mod_help dd{
+  font-size: 12px;
+padding: 2px 0x;
+}
+.mod_copyright{
+  text-align: center;
+  font-size: 12px;
+}
+.mod_copyright .links{
+  margin: 20px 0;
+}
